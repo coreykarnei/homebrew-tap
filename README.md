@@ -10,14 +10,8 @@ by side.
 brew install --cask coreykarnei/tap/atelier
 ```
 
-Atelier is signed with a self-signed certificate rather than a Developer ID,
-and is not notarized, so macOS quarantines the download and refuses the first
-launch. Approve it once in System Settings → Privacy & Security → **Open
-Anyway**, or skip quarantine at install time:
-
-```sh
-brew install --cask --no-quarantine coreykarnei/tap/atelier
-```
+Releases are signed with a Developer ID and notarized by Apple, so the app
+opens on first launch without a Gatekeeper prompt.
 
 The cask installs `Atelier.app` into `/Applications` and links the bundled
 workspace CLI onto your `PATH` as `atelier`.

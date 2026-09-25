@@ -1,6 +1,6 @@
 cask "atelier" do
-  version "1.2.0"
-  sha256 "bbcb55f7d985ad70b5a21497cfa918f8e745480a78d3cd3a61676f55354f1294"
+  version "1.3.0"
+  sha256 "47d1f2870640cbb40ef8fc930bbae8a03194ee1bf8e284c6c02b24b87d21c64a"
 
   url "https://github.com/coreykarnei/atelier/releases/download/v#{version}/Atelier-#{version}.zip"
   name "Atelier"
@@ -32,16 +32,6 @@ cask "atelier" do
   ]
 
   caveats <<~EOS
-    Atelier is signed with a self-signed certificate, not a Developer ID,
-    and is not notarized. macOS will refuse the first launch. Either:
-
-      Open System Settings -> Privacy & Security, then "Open Anyway", or
-      xattr -dr com.apple.quarantine "#{appdir}/Atelier.app"
-
-    To skip that entirely, reinstall with:
-
-      brew install --cask --no-quarantine coreykarnei/tap/atelier
-
     Atelier hosts Claude Code; install it and confirm `claude` runs in your
     terminal first. Notification hooks, language servers and remote sessions
     are covered in docs/SETUP.md in the repository.
