@@ -1,6 +1,6 @@
 cask "atelier" do
-  version "1.4.11"
-  sha256 "a103d5242a8de7fe205626bbd23d51bb73365384974a2ce84115ae74c799aaaa"
+  version "1.4.12"
+  sha256 "bd838623af1b2459ae98f1cdfbe172ee134b0743b1c900f690031b661add674a"
 
   url "https://github.com/coreykarnei/atelier/releases/download/v#{version}/Atelier-#{version}.zip"
   name "Atelier"
